@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>simple js math</title>
+	<meta charset="utf-8">
+	<script src="math.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+	body {
+	  font-family: Verdana, arial, sans-serif;
+	}
+	form, input, button {
+	  display: inline;
+	}
+	.math-container {
+	  margin-bottom: 40px;
+	}
+	.jumbotron {
+	  box-shadow: 4px 4px 8px #000000;
+	  margin-top: 5%;
+	}
+	</style>
+  </head>
+  <body>
+  <div class="container">
+  <div class="jumbotron">
+  <h1>simple-js-math <small>[with HTML5 forms]</small></h1><br>
+  <div class="math-container">
+  <p>What is 2 + 2?</p>
+  <form id="form-one">
+  <input type="text" name="in-one"></input></form><button onclick="answerOne()">Check answer</button>&nbsp; [ <span id="result-one">result</span> ]
+  </div>
+  <div class="math-container">
+  <p>What is the square root of 25?</p>
+  <form id="form-two">
+  <input type="text" name="in-two"></input></form><button onclick="answerTwo()">Check answer</button>&nbsp; [ <span id="result-two">result</span> ]
+  </div>
+  <div class="math-container">
+  <p>What is 34.586 rounded to the nearest tenth?</p>
+  <form id="form-three">
+  <input type="text" name="in-three"></input></form><button onclick="answerThree()">Check answer</button>&nbsp; [ <span id="result-three">result</span> ]
+  </div>
+  </div>
+  </div>
+  </body>
+</html>
